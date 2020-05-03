@@ -33,6 +33,20 @@ fun main() {
     /** Floating point numbers: Float (32 bit), Double (64 bit) */
     var c = 123.45 // by default, kotlin will infer this to Double
     var d = 45.12F // explicit Float
+    var isRaining2: Boolean = true
+    var floatValue: Float = 3.14F
+    var doubleValue: Double = 87234.1234
+    var lett3er: Char = 'A'
+
+    var name1 = "David"
+    var fullName = "John Smith"
+
+    var i = 1234567890123 // this is Long object
+    var j: Int = i.toInt() // value will be converted to Int by using conversion function, but it will be truncated. You may not want this behavior in your code.
+
+
+    // explicitly create a String object
+    var schoolName: String = "Stanford University"
 
     /** Booleans : true or false */
     var isHot = true
@@ -43,9 +57,9 @@ fun main() {
     var name = "Adam" // String: multiple characters together
 
     /** Explicitly declaring a variable type */
-    var num1: Short
-    var num2: Int
-    var num3: Long
+    var num11: Short
+    var num22: Int
+    var num23: Long
     var num4: Byte
     var ch: Char
     var str: String
@@ -98,4 +112,18 @@ fun main() {
     /** Explicitly define arrays type */
     var byteArray: Array<Byte> = arrayOf(3, 4, 5)
     byteArray.forEach { print(" $it") }
-}
+
+    var intArray: Array<Int> = arrayOf(11, 22, 33)
+
+    var cities: Array<String> = arrayOf("New York", "Denver", "Paris", "Tokyo" )
+    var citySize = "cities has ${cities.size} entries."
+    var firstCity = "The first entry is ${cities[0]}"
+
+
+
+    var decimalNumbers: Array<Double> = arrayOf(3.14, 5.12, 6.23, 10.0)
+
+    var id = 99
+    var idString = "My ID is $id"
+
+  }
